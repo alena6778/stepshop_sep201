@@ -70,6 +70,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'stepshop.wsgi.application'
 
+
+
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -122,6 +124,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'stepshop', 'static'),
 )
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
